@@ -17,5 +17,15 @@
         padding: 13rem 5rem 7rem 3rem;
         margin-left: -0.4rem;
     }
+
+    .zebra .text-svg {
+        padding: 5rem 5rem 0 5rem;
+    }
+    .zebra .text-svg img {
+        margin-bottom: -8rem;
+    }
+    .zebra .content-col {
+        padding-top: 8rem!important;
+    }
     
 }

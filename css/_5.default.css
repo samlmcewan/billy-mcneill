@@ -6,6 +6,7 @@
 body {
     /* font-family: "Bitter", serif; */
     font-family: "Roboto", serif;
+    font-size: 1.125rem;
 }
 
 a {
@@ -18,6 +19,10 @@ a {
 
 h2 {
     font-size: 3rem;
+}
+
+p.date {
+    font-weight: 500;
 }
 /*--------------------------------------------------------------
 # Main Navigation
@@ -283,4 +288,39 @@ z-index: 9;
 
 .who-we-are img {
     width: 100%;
+}
+
+/* our-events */
+
+.zebra .container-fluid .row .col:nth-of-type(1) {
+    position: relative;
+    z-index: -1;
+}
+.zebra .container-fluid .row .col:nth-of-type(2) {
+    position: relative;
+    z-index: 9;
+}
+
+.zebra .text-svg {
+    background-color: #000000;
+    padding: 3rem 3rem 0 3rem;
+}
+.zebra .text-svg img {
+    margin-bottom: -3rem;
+}
+
+.zebra .content-col {
+    background-color: var(--gray);
+}
+
+.zebra .content-col h3 {
+    font-family: "Bitter", serif;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.zebra .zebra-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
