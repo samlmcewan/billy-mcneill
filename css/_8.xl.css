@@ -92,7 +92,7 @@
     top: 8vw;
     right: 4vw;
     /* left: -5vw; */
-    width: 110%;
+    width: 120%;
 }
 .zebra .container-fluid .row .col:nth-of-type(1) {
     padding: 5rem!important;
@@ -103,6 +103,12 @@
 .zebra .content-col p {
     font-size: 1.25rem;
 }
+
+/* .zebra .container-fluid .row .col:nth-of-type(1) {
+    padding-left: 3rem!important;
+    padding-right: 3rem!important;
+} */
+
    
 }
         
