@@ -1,0 +1,92 @@
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .logo-top {
+        width: 200px;
+    }
+    #main-nav .active a {
+        border-bottom: 2px solid var(--black);
+        color: var(--green);
+   }
+   #main-nav .active {
+    background-color: unset;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+#main-nav .dropdown-toggle {
+    pointer-events: none;
+}
+.dropdown-menu {
+    margin-top: 0;
+    transition: all 0.3s ease;
+}
+#main-nav .dropdown-menu {
+    margin-top: 0;
+}
+#main-nav .nav-item.dropdown:hover a:not(#main-nav .nav-item.dropdown:hover ul li a) {
+    color: var(--black);
+}
+#main-nav .nav-item.dropdown ul li a {
+    color: #ffffff;
+}
+#main-nav .nav-item:hover a{
+    opacity: .98;
+}
+#main-nav .nav-item.dropdown ul li a:hover {
+    color: var(--yellow);
+    background-color: transparent!important;
+}
+
+.navbar-nav .nav-item, .navbar ul li:first-child:not(.dropdown ul li), #main-nav .navbar-nav .nav-item:last-of-type {
+    border: none;
+}
+.navbar-collapse {
+    background-color: unset;
+}
+
+#main-nav .nav-link {
+    font-size: 1.5rem;
+    padding-bottom: .25rem;
+}
+#main-nav .nav-item:hover a:not(#main-nav .dropdown a) {
+    color: var(--pink);
+}
+
+#main-nav ul .nav-item a:hover {
+    opacity: .67;
+}
+
+.email-donate a:nth-of-type(1) svg {
+    width: 2.5rem;
+}
+.email-donate a:nth-of-type(2) svg {
+    width: 3.5rem;
+}
+.our-aim p {
+    font-size: 1.75rem;
+}
+.our-aim p span {
+    font-size: 2rem;
+
+}
+.hero-text img {
+    top: 8vw;
+    right: 4vw;
+    left: -5vw;
+}
+.our-aim {
+    width: 70%;
+    margin-left: 3rem;
+    padding: 7% 5% 5% 3%;
+}
+.our-aim p {
+    font-size: 2.5rem;
+}
+.our-aim p span {
+    font-size: 2.75rem;
+
+}
+}
+        

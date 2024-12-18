@@ -1,0 +1,270 @@
+/* Default styles - small devices (Mobile, screen width < 768px) */
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+body {
+    /* font-family: "Bitter", serif; */
+    font-family: "Roboto", serif;
+}
+
+a {
+    color: var(--green);
+}
+
+/*--------------------------------------------------------------
+# Main Navigation
+--------------------------------------------------------------*/
+.navbar-toggler {
+    border: none;
+}
+
+#main-nav .active {
+    background-color: var(--green);
+}
+
+#main-nav a {
+    /* text-transform: uppercase; */
+    color: var(--black);
+    font-weight: 500;
+    transition: all .3s;
+}
+
+#main-nav .btn {
+    font-size: 18px;
+}
+
+#main-nav .active a {
+     color: #ffffff;
+}
+
+#main-nav .btn {
+    font-size: 18px;
+}
+
+.nav-outer .container {
+    padding: 0;
+}
+
+
+.navbar ul {
+    padding: 0;
+}
+
+.navbar ul li, .site-logo-top, .navbar-toggler, .mobile-search-btn {
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    padding-right: calc(var(--bs-gutter-x) * .5);
+}
+
+.navbar-nav .nav-item, .navbar ul li:first-child:not(.dropdown ul li) {
+    padding: .9rem calc(var(--bs-gutter-x) * .5);
+    border-top: thin solid var(--lightGray);
+}
+
+.navbar a {
+    padding: 0;
+}
+.nav-contact-contain {
+    padding: 0 calc(var(--bs-gutter-x) * .5);
+}
+/* #main-nav .navbar-nav .nav-item:last-of-type {
+    border-bottom: thin solid var(--lightGray);
+} */
+
+/* Collapse Button Mobile */
+.animated-icon {
+    cursor: pointer;
+    height: 20px;
+    margin: 0px;
+    position: relative;
+    width: 30px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+    .animated-icon span {
+        border-radius: 9px;
+        display: block;
+        height: 3px;
+        position: absolute;
+        left: 0;
+        opacity: 1;
+        width: 100%;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out;
+    }
+
+    .animated-icon span {
+        background: var(--green);
+    }
+
+        .animated-icon span:nth-child(1) {
+            top: 0px;
+            -webkit-transform-origin: left center;
+            -moz-transform-origin: left center;
+            -o-transform-origin: left center;
+            transform-origin: left center;
+        }
+
+        .animated-icon span:nth-child(2) {
+            top: 10px;
+            -webkit-transform-origin: left center;
+            -moz-transform-origin: left center;
+            -o-transform-origin: left center;
+            transform-origin: left center;
+        }
+
+        .animated-icon span:nth-child(3) {
+            top: 20px;
+            -webkit-transform-origin: left center;
+            -moz-transform-origin: left center;
+            -o-transform-origin: left center;
+            transform-origin: left center;
+        }
+
+    .animated-icon.open span:nth-child(1) {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        top: 0px;
+        left: 8px;
+    }
+
+    .animated-icon.open span:nth-child(2) {
+        width: 0%;
+        opacity: 0;
+    }
+
+    .animated-icon.open span:nth-child(3) {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        top: 21px;
+        left: 8px;
+    }
+
+    #main-nav .logo-top {
+        padding-left: calc(var(--bs-gutter-x)* .5);
+        width: 11rem;
+    }
+    .navbar-collapse {
+        background-color: var(--gray);
+    }
+
+#main-nav .nav-item.active ul {
+    background-color: var(--green)!important;
+}
+
+#main-nav {
+z-index: 9;
+}
+
+#main-nav .nav-item.active ul li a.dropdown-item.active {
+    color: #ffffff!important;
+}
+#main-nav a#navbarDropdown:hover {
+    color: var(--white)!important;
+}
+
+.email-donate {
+    width: 100%;
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    padding-right: calc(var(--bs-gutter-x) * .5);
+}
+.email-donate a {
+    text-decoration: none;
+}
+
+.email-donate p {
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    transition: all .3s;
+}
+
+.email-donate a:nth-of-type(1) p {
+    font-weight: 300;
+    padding-left: 1rem;
+}
+.email-donate a:nth-of-type(2) p {
+    color: var(--green);
+    font-weight: 600;
+    padding-left: 1rem;
+}
+.email-donate a:nth-of-type(1) svg {
+    width: 2rem;
+}
+.email-donate a:nth-of-type(2) svg {
+    width: 3rem;
+}
+
+.email-donate a:hover p {
+    color: var(--black);
+    opacity: .67;
+}
+
+/* Hero  */
+.swiper-slide img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero h1 {
+    font-family: "Bitter", serif;
+}
+
+.hero-text {
+    background-color: #000000;
+    padding: 3rem 3rem 0 3rem;
+}
+.hero-text img {
+    margin-bottom: -3rem;
+}
+
+.our-aim {
+    width: 683.63px;
+    height: fit-content;
+    padding: 7.5rem 2rem 7rem 2rem;
+    background: #000000;
+    clip-path: polygon(
+      2.09% 100%,   /* Point A (14.3, 239.72) */
+      0% 0%,        /* Point B (0, 0) */
+      100% 4.73%,   /* Point C (683.63, 11.34) */
+      87.96% 80.59%,/* Point D (601.41, 193.19) */
+      2.09% 100%    /* Point A (14.3, 239.72 again) */
+    )
+}
+
+.our-aim p {
+    color: var(--white);
+    font-family: "Bitter", serif;
+    font-size: 2.25rem;
+    font-weight: 500;
+}
+.our-aim p span {
+    font-size: 3rem;
+    color: var(--green);
+}
+
+.hero .container-fluid .row:nth-of-type(1) {
+    position: relative;
+    z-index: 9;
+}
+.hero .container-fluid .row:nth-of-type(2) {
+    position: relative;
+    z-index: -1;
+    margin-top: -3rem;
+}

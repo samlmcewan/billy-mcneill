@@ -1,0 +1,21 @@
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    .email-donate {
+        width: unset;
+    }
+
+    .hero-text {
+        padding: 5rem 5rem 0 5rem;
+    }
+
+    .hero-text img {
+        margin-bottom: -8rem;
+    }
+
+    .our-aim {
+        padding: 13rem 5rem 7rem 3rem;
+        margin-left: -0.4rem;
+    }
+    
+}
