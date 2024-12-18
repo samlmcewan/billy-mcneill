@@ -40,4 +40,11 @@
         font-size: 1.75rem;
 
     }
+
+    .who-we-are h2 {
+        font-size: 4.5rem;
+    }
+    .who-we-are p {
+        font-size: 1.5rem;
+    }
 }

@@ -12,6 +12,13 @@ a {
     color: var(--green);
 }
 
+.lead {
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 3rem;
+}
 /*--------------------------------------------------------------
 # Main Navigation
 --------------------------------------------------------------*/
@@ -267,4 +274,13 @@ z-index: 9;
     position: relative;
     z-index: -1;
     margin-top: -3rem;
+}
+
+/* Who we are  */
+.who-we-are h2 {
+    color: var(--green);
+}
+
+.who-we-are img {
+    width: 100%;
 }
