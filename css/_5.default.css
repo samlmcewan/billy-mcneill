@@ -267,6 +267,9 @@ z-index: 9;
     color: var(--black);
     opacity: .67;
 }
+.email-donate a:nth-of-type(1):hover p {
+    color: var(--green);
+}
 
 /* Hero  */
 .swiper-slide img {
