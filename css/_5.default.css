@@ -24,6 +24,46 @@ h2 {
 p.date {
     font-weight: 500;
 }
+.line-title {
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .line-title .title {
+    background-color: var(--white);
+    padding: .5rem;
+    width: fit-content;
+  }
+  .line-title h2 {
+    display: inline-block;
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+  }
+  
+  .line-title .line {
+    position: absolute;
+    top: 50%; /* Center the line vertically */
+    transform: translateY(-50%); /* Adjust for line height */
+    width: 100%; /* Set the line width to half the container width */
+    height: 2px; /* Adjust line thickness */
+    background-color: green; /* Adjust line color as needed */
+    left: 0; /* Position the left line */
+    right: 0; /* Position the right line */
+    z-index: -1;
+  }
+  
+  .line-title .line:first-child {
+    left: 0; /* Position the left line */
+  }
+  
+  .line-title .line:last-child {
+    right: 0; /* Position the right line */
+  }
+  
 /*--------------------------------------------------------------
 # Main Navigation
 --------------------------------------------------------------*/
@@ -326,4 +366,300 @@ z-index: 9;
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.zebra {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+/* Latest News  */
+/* .latest-news {
+    margin: 15rem 0 3rem;
+    padding: 3rem 0;
+} */
+.latest-news h2 {
+    font-family: "Bitter", serif;
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--green);
+}
+.latest-news a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.latest-news p {
+    font-weight: 300;
+}
+.latest-news .card {
+    border: none;
+    border-radius: 0;
+}
+.latest-news .card .card-body {
+    border-radius: 0;
+    border: 1px solid var(--gray);
+    margin-top: .5rem;
+    transition: all .3s;
+}
+
+.latest-news .card-img-top {
+    height: 17.5rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0;
+    transition: all .3s;
+}
+
+
+.more p {
+    font-size: 1rem;
+    font-family: 'bitter', serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.more svg {
+    width: 1rem;
+    margin-right: .5rem;
+}
+
+.latest-news a.news-btn {
+    text-transform: uppercase;
+    transition: all .3s;
+}
+
+.latest-news a.news-btn:hover {
+    color: var(--green);
+}
+
+.latest-news a.card:hover .card-img-top {
+    opacity: .9;
+}
+.latest-news a.card:hover .card-body {
+    background-color: var(--black);
+    color: var(--green);
+}
+
+.latest-news a.card:hover .card-body svg g line {
+    stroke: var(--green)!important;
+}
+
+/* Help Us  */
+.help-us {
+    margin-bottom: 5rem;
+}
+
+.help-us .container a, .help-us .container a img {
+    width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+footer {
+    font-size: .875rem;
+    background-color: var(--gray);
+}
+footer .logo-footer {
+    width: 16rem;
+}
+
+
+footer#footer {
+    /* border-top: 2px solid var(--gold); */
+}
+    footer a span {
+        /* color: var(--cyan); */
+    }
+
+    footer .footer-title {
+        font-weight: 400;
+        font-family: "Barlow Condensed", sans-serif;
+        text-transform: uppercase;
+        color: var(--purple);
+        font-weight: 700;
+    }
+
+
+
+    footer a {
+        color: var(--black);
+        font-size: .875rem;
+        text-decoration: none;
+        font-weight: 400;
+    }
+
+        footer a:hover {
+            /* text-decoration: underline; */
+            color: var(--green);
+        }
+
+            
+
+
+.footer-title {
+    font-size: 1.25rem;
+    /*font-weight: 500;*/
+    margin-bottom: 20px;
+}
+footer .navbar-toggler {
+    border: none;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+    padding-left: 2.3rem;
+    text-indent: -1.1rem;
+}
+footer .fa-angle-right {
+   height: 20px;
+}
+footer .fa-angle-down {
+    width: 20px;
+}
+footer .fa-chevron-right {
+    /*color: #ffffff;*/
+    /*color: #ffffff;*/
+    padding-right: 0.2rem;
+}
+
+.shfooter .collapse {
+    display: inherit;
+}
+
+/* .shfooter i::before {
+    color: var(--light);
+} */
+
+
+.resize {
+    text-align: center;
+}
+
+.resize {
+    margin-top: 3rem;
+    font-size: 1.25rem;
+}
+
+/* Social footer  */
+footer .fa-brands {
+    width: 7%;
+}
+
+footer .fab:before {
+    font-size: 1.1rem;
+}
+
+.social-footer a:hover svg {
+    /*color: var(--links); */
+    animation: icons-rise 0.3s linear forwards;
+}
+
+#footer .social-logos svg {
+   width: 30px;
+   height: 30px;
+   transition: all .3s;
+}
+#footer .social-logos svg g rect{
+   
+    transition: all .3s;
+ }
+#footer h4 {
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+@keyframes icons-rise {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translate(2.5px, -2.5px);
+    }
+}
+
+.social-footer a:hover {
+    text-decoration: none;
+}
+
+    .social-footer a:hover span {
+        text-decoration: underline;
+    }
+
+@keyframes arrow-right {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translateX(3px);
+    }
+}
+
+
+
+footer hr:not([size]) {
+    height: 1px;
+    /* color: var(--hcs-blue); */
+    opacity: .8;
+}
+
+footer ul li {
+    padding-left: 0;
+    text-indent: 0;
+    /* remove this if issue 616 617 */
+    display: flex;
+    align-items: center;
+}
+
+footer .fa-chevron-right {
+    display: none;
+}
+
+.footer-title {
+    margin-bottom: 0;
+}
+
+.shfooter ul {
+    margin-bottom: 0;
+}
+
+.shfooter .collapse {
+    display: none;
+}
+
+    .shfooter .collapse.show {
+        display: block;
+    }
+
+.shfooter .title .fa-angle-down,
+.shfooter .title[aria-expanded=true] .fa-angle-right {
+    display: none;
+}
+
+.shfooter .title[aria-expanded=true] .fa-angle-down {
+    display: block;
+}
+
+.shfooter .navbar-toggler {
+    display: inline-block;
+    padding: 0;
+}
+
+
+footer a  {
+    transition: all .3s;
+}
+footer a, footer p, footer h3 {
+    color: var(--black);
+}
+
+footer #social svg {
+    width: 2rem;
+}
+footer #social a svg g circle {
+    transition: all .3s;
+}
+footer #social a:hover svg g circle {
+    fill: var(--green)!important;
 }

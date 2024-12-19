@@ -27,5 +27,10 @@
     .zebra .content-col {
         padding-top: 8rem!important;
     }
+    .line-title .title {
+   
+        padding: 2rem;
+    
+      }
     
 }

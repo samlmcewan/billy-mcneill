@@ -108,7 +108,47 @@
     padding-left: 3rem!important;
     padding-right: 3rem!important;
 } */
-
+.latest-news {
+    margin: 15rem 0 3rem;
+    padding: 3rem 0;
+}
+.zebra {
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+}
+.shfooter .collapse {
+    display: block;
+    }
+    footer .fa-chevron-right {
+    display: inline-block;
+    }
+    footer ul li {
+    margin-bottom: 10px;
+    
+    }
+    footer ul li span {
+        display: inline-block;
+    }
+    footer ul li a:hover span {
+        animation: arrow-right 0.3s linear forwards; 
+              
+          }
+      
+      @keyframes arrow-right {
+        from {
+          transform: translateX(0px); }
+        to {
+          transform: translateX(2px); } 
+          
+      }
+    
+      #footer .footer-title {
+        font-size: 1.5rem;
+      }
+      footer .logo-footer {
+        width: 100%;
+        height: auto;
+      }
    
 }
         
