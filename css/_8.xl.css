@@ -110,7 +110,10 @@
 } */
 .latest-news {
     margin: 15rem 0 3rem;
-    padding: 3rem 0;
+    padding-bottom: 3rem;
+}
+.help-us {
+    margin-top: 20rem;
 }
 .zebra {
     margin-top: 5rem;

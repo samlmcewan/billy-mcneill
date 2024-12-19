@@ -452,6 +452,18 @@ z-index: 9;
 .help-us .container a, .help-us .container a img {
     width: 100%;
 }
+.help-us .container a img {
+    border-radius: 40px;
+    /* box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; */
+    /* box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px; */
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: all .3s;
+}
+.help-us .container a:hover img {
+    /* box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px; */
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    opacity: .9;
+}
 
 /*--------------------------------------------------------------
 # Footer
